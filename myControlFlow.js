@@ -90,10 +90,144 @@ while(b<10){
     b++;
 }
 
-
-let c=0
-do{
-    if(c===5)
-     break;
-    console.log(c)
+//using a break in the while loop
+let w = 1;
+while(w<=10){
+  if(w===6){
+  break;
+  }
+  //console.log(w)
+  w++
 }
+
+//for of loop:used when we dont want to iterate over elements without using index.
+
+let mynumbers=[1,2,3,4,5,6,7,8,9]
+
+for(let element of mynumbers){
+   // console.log(element)
+}
+//Break statement:used to exit a loop in order to avoid an infinite loop
+
+ //for loop  break
+
+ for(let i=0;i<=10;i++){
+   if(i===6){
+    break;
+   }
+  // console.log(i);
+ }
+ 
+
+ //break statement in a while loop
+  let x=0;
+  while(x<=10){
+    if (x===6){
+      break;
+    }
+    //console.log(x)
+    x++;
+  }
+
+  //break statement in a do while loop
+
+     let y=0;
+     do{
+      if(y===6){
+        break;
+      }
+     // console.log(y)
+      y++;
+      
+      } while(y<=10);
+
+
+      //break statement with the for in loop
+      //the for in loop is used with objects
+
+      const mycourse={a:1,b:2,c:3,d:4};
+      for(let key in mycourse){
+        if(key==='d'){
+          break;
+        }
+        //console.log(mycourse[key]);
+      }
+
+      //break statement with the for of loop
+      //used on the arrays
+       const arr=[1,2,3,4,5];
+       for(let element of arr){
+        if(element===4){
+          break;
+        }
+        //console.log(element);
+       }
+
+       //continue statement:used to skip the current iteration of the loop for
+       // the next iteration
+
+        //continue statment for the for loop
+        for(let i=0;i<10;i++){
+          if(i % 2===0){
+            continue;
+          }
+          //console.log(i);
+        }
+
+        //continue statement for a while loop
+        let z=0;
+        while(z<=10){
+          z++;
+          if(z % 2===0){
+            continue;
+          }
+          //console.log(z);
+        }
+
+        //continue statement fora do while loop
+        let v=0;
+        do{
+          if(v % 2===0){
+            continue;
+          }
+          v++;
+          //console.log(v);
+        }while(v<=10)
+
+          //continue statement for the for in loop
+          //for in loop is used with objects
+
+          const obj={a:1,b:2,c:3,d:4};
+          for(let key in obj){
+            if(obj[key]%2===0){
+              continue;
+            }
+            //console.log(obj[key])
+          }
+
+          //continue statment for the for of 
+          const myarr=[1,2,3,4,5];
+          for(let element of myarr){
+            if(element % 2===0){
+              continue;
+            }
+            //console.log(element);
+          }
+
+ 
+          //A function that takes 2 values and returns max number
+
+          //function maxNum(num1, num2){
+            //return num1 >= num2 ? num1 : num2;
+         // }
+           
+           // console.log(maxNum(2, 3));
+
+          function testNumber(testNum){
+              if(testNum %3===0 && testNum %5===0){
+               console.log("fizzBuzz");
+              }
+}
+                 console.log(testNumber(15));
+
+                      
